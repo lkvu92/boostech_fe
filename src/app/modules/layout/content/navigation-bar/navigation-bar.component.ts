@@ -3,6 +3,7 @@ import {MatToolbar, MatToolbarRow} from "@angular/material/toolbar";
 import {MatButton, MatFabButton, MatIconButton} from "@angular/material/button";
 import {MatIcon} from "@angular/material/icon";
 import {MatCard, MatCardActions, MatCardHeader, MatCardSubtitle, MatCardTitle} from "@angular/material/card";
+import {MatTooltip} from "@angular/material/tooltip";
 @Component({
   selector: 'app-navigation-bar',
   standalone: true,
@@ -18,6 +19,7 @@ import {MatCard, MatCardActions, MatCardHeader, MatCardSubtitle, MatCardTitle} f
     MatCardTitle,
     MatCardSubtitle,
     MatFabButton,
+    MatTooltip,
   ],
   templateUrl: './navigation-bar.component.html',
   styleUrl: './navigation-bar.component.scss'
