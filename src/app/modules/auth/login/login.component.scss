@@ -1,0 +1,20 @@
+.wrapper {
+    @apply h-full w-[400px];
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    margin: auto;
+}
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('/assets/images/login-bg.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

@@ -1,0 +1,18 @@
+<div class="SectionHeader">
+  <mat-icon class="avatar_icon">
+    {{menuItems.title.charAt(0)}}
+  </mat-icon>
+  <p class="Title2">{{menuItems.title}}</p>
+  <span class="Disclosure">
+<!--         <mat-icon>expand_more</mat-icon>-->
+  </span>
+</div>
+@for (item of menuItems.children; track item) {
+  <div class="Frame">
+      <span class="Accessory">
+        <span class="Symbol"></span>
+      </span>
+    <a href="{{item.href}}" class="TitleSub"><span class="Symbol"></span>{{ item.title }}</a>
+    <div class="Counter">{{item.count}}</div>
+  </div>
+}
